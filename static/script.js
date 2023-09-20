@@ -17,7 +17,7 @@ function renderJSONToHTML(data) {
     if (column.options) {
       // Render select fields
       html += `
-        <div class="input-field col s3">
+        <div class="input-field col s3" style="margin-top: 30px;">
           <select id="${column.title.toLowerCase()}" name="${column.title.toLowerCase()}">
             ${column.options
               .map(
@@ -27,16 +27,25 @@ function renderJSONToHTML(data) {
               .join("")}
           </select>
           <label>${column.title}</label>
-          <span class="helper-text">${column.helper}</span>
+          <span class="helper-text truncate tooltipped" data-position="bottom" data-tooltip="${
+            column.helper
+          }">${column.helper}</span>
         </div>
       `;
     } else {
       // Render input fields
+      const includeYear =
+        column.title.toLowerCase().includes("year") ||
+        column.title.toLowerCase().includes("yr");
       html += `
-        <div class="input-field col s3">
-          <input id="${column.title.toLowerCase()}" name="${column.title.toLowerCase()}" type="text" class="validate" value="1" />
+        <div class="input-field col s3" style="margin-top: 30px;">
+          <input id="${column.title.toLowerCase()}" name="${column.title.toLowerCase()}" type="number" class="validate" value="${
+        includeYear ? 2010 : 0
+      }" />
           <label for="${column.title.toLowerCase()}">${column.title}</label>
-          <span class="helper-text">${column.helper}</span>
+          <span class="helper-text truncate tooltipped" data-position="bottom" data-tooltip="${
+            column.helper
+          }">${column.helper}</span>
         </div>
       `;
     }
@@ -46,5 +55,8 @@ function renderJSONToHTML(data) {
   appDiv.innerHTML = html;
 
   const elems = document.querySelectorAll("select");
-  const instances = M.FormSelect.init(elems);
+  M.FormSelect.init(elems);
+  M.updateTextFields();
+  var tooltips = document.querySelectorAll(".tooltipped");
+  var instances = M.Tooltip.init(tooltips);
 }
