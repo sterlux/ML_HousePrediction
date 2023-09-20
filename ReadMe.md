@@ -16,7 +16,7 @@
 
    - On Windows:
      ```bash
-     venv\Scripts\activate
+     .\venv\Scripts\activate
      ```
 
 3. **Install the Required Packages**:
