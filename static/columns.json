@@ -1,0 +1,808 @@
+[
+  {
+    "title": "MSSubClass",
+    "helper": "Identifica el tipo de vivienda involucrada en la venta.",
+    "options": [
+      { "value": 20, "text": "1 PLANTA 1946 Y MÁS NUEVOS TODOS LOS ESTILOS" },
+      { "value": 30, "text": "1 PLANTA 1945 Y MÁS ANTIGUOS" },
+      { "value": 40, "text": "1 PLANTA CON ÁTICO TERMINADO TODAS LAS EDADES" },
+      { "value": 45, "text": "1-1/2 PLANTA - SIN TERMINAR TODAS LAS EDADES" },
+      { "value": 50, "text": "1-1/2 PLANTA TERMINADO TODAS LAS EDADES" },
+      { "value": 60, "text": "2 PLANTAS 1946 Y MÁS NUEVOS" },
+      { "value": 70, "text": "2 PLANTAS 1945 Y MÁS ANTIGUOS" },
+      { "value": 75, "text": "2-1/2 PLANTA TODAS LAS EDADES" },
+      { "value": 80, "text": "DIVIDIDO O MULTINIVEL" },
+      { "value": 85, "text": "ENTRADA DIVIDIDA" },
+      { "value": 90, "text": "DÚPLEX - TODOS LOS ESTILOS Y EDADES" },
+      {
+        "value": 120,
+        "text": "1 PLANTA PUD (Desarrollo de Unidad Planificada) - 1946 Y MÁS NUEVOS"
+      },
+      { "value": 150, "text": "1-1/2 PLANTA PUD - TODAS LAS EDADES" },
+      { "value": 160, "text": "2 PLANTAS PUD - 1946 Y MÁS NUEVOS" },
+      { "value": 180, "text": "PUD - MULTINIVEL - INCLUYE ENTRADA DIVIDIDA" },
+      {
+        "value": 190,
+        "text": "CONVERSIÓN DE 2 FAMILIAS - TODOS LOS ESTILOS Y EDADES"
+      }
+    ]
+  },
+  {
+    "title": "MSZoning",
+    "helper": "Identifica la clasificación general de zonificación de la venta.",
+    "options": [
+      { "value": "A", "text": "Agrícola" },
+      { "value": "C", "text": "Comercial" },
+      { "value": "FV", "text": "Residencial Flotante" },
+      { "value": "I", "text": "Industrial" },
+      { "value": "RH", "text": "Residencial Alta Densidad" },
+      { "value": "RL", "text": "Residencial Baja Densidad" },
+      { "value": "RP", "text": "Residencial Baja Densidad con Parque" },
+      { "value": "RM", "text": "Residencial Densidad Media" }
+    ]
+  },
+  {
+    "title": "LotFrontage",
+    "helper": "Pies lineales de calle conectados a la propiedad"
+  },
+  {
+    "title": "LotArea",
+    "helper": "Tamaño del lote en pies cuadrados"
+  },
+  {
+    "title": "Street",
+    "helper": "Tipo de acceso a la propiedad",
+    "options": [
+      { "value": "Grvl", "text": "Grava" },
+      { "value": "Pave", "text": "Pavimentado" }
+    ]
+  },
+  {
+    "title": "Alley",
+    "helper": "Tipo de acceso al callejón",
+    "options": [
+      { "value": "Grvl", "text": "Grava" },
+      { "value": "Pave", "text": "Pavimentado" },
+      { "value": "NA", "text": "Sin acceso" }
+    ]
+  },
+  {
+    "title": "LotShape",
+    "helper": "Forma general de la propiedad",
+    "options": [
+      { "value": "Reg", "text": "Regular" },
+      { "value": "IR1", "text": "Ligeramente irregular" },
+      { "value": "IR2", "text": "Moderadamente irregular" },
+      { "value": "IR3", "text": "Irregular" }
+    ]
+  },
+  {
+    "title": "LandContour",
+    "helper": "Planitud de la propiedad",
+    "options": [
+      { "value": "Lvl", "text": "Casi Plano/Nivel" },
+      { "value": "Bnk", "text": "Con pendiente" },
+      { "value": "HLS", "text": "Ladera" },
+      { "value": "Low", "text": "Depresión" }
+    ]
+  },
+  {
+    "title": "Utilities",
+    "helper": "Tipo de servicios disponibles",
+    "options": [
+      { "value": "AllPub", "text": "Todos los servicios públicos (E,G,W,& S)" },
+      { "value": "NoSewr", "text": "Electricidad, Gas, y Agua (Septic Tank)" },
+      { "value": "NoSeWa", "text": "Electricidad y Gas (Septic Tank)" },
+      { "value": "ELO", "text": "Electricidad solamente" }
+    ]
+  },
+  {
+    "title": "LotConfig",
+    "helper": "Configuración del lote",
+    "options": [
+      { "value": "Inside", "text": "Lote interior" },
+      { "value": "Corner", "text": "Lote en esquina" },
+      { "value": "CulDSac", "text": "Calle sin salida" },
+      { "value": "FR2", "text": "Frente a calle secundaria" },
+      { "value": "FR3", "text": "Frente a calle terciaria" }
+    ]
+  },
+  {
+    "title": "LandSlope",
+    "helper": "Pendiente de la propiedad",
+    "options": [
+      { "value": "Gtl", "text": "Suave" },
+      { "value": "Mod", "text": "Moderado" },
+      { "value": "Sev", "text": "Severo" }
+    ]
+  },
+  {
+    "title": "Neighborhood",
+    "helper": "Ubicaciones físicas dentro de los límites de la ciudad de Ames",
+    "options": [
+      { "value": "Blmngtn", "text": "Alturas de Bloomington" },
+      { "value": "Blueste", "text": "Bluestem" },
+      { "value": "BrDale", "text": "Briardale" },
+      { "value": "BrkSide", "text": "Brookside" },
+      { "value": "ClearCr", "text": "Clear Creek" },
+      { "value": "CollgCr", "text": "College Creek" },
+      { "value": "Crawfor", "text": "Crawford" },
+      { "value": "Edwards", "text": "Edwards" },
+      { "value": "Gilbert", "text": "Gilbert" },
+      { "value": "IDOTRR", "text": "Iowa DOT y Ferrocarril" },
+      { "value": "MeadowV", "text": "Villa Meadow" },
+      { "value": "Mitchel", "text": "Mitchell" },
+      { "value": "Names", "text": "North Ames" },
+      { "value": "NoRidge", "text": "Northridge" },
+      { "value": "NPkVill", "text": "Villa Northpark" },
+      { "value": "NridgHt", "text": "Alturas de Northridge" },
+      { "value": "NWAmes", "text": "Northwest Ames" },
+      { "value": "OldTown", "text": "Viejo Pueblo" },
+      {
+        "value": "SWISU",
+        "text": "Sur y Oeste de la Universidad Estatal de Iowa"
+      },
+      { "value": "Sawyer", "text": "Sawyer" },
+      { "value": "SawyerW", "text": "Sawyer Oeste" },
+      { "value": "Somerst", "text": "Somerset" },
+      { "value": "StoneBr", "text": "Stone Brook" },
+      { "value": "Timber", "text": "Timberland" },
+      { "value": "Veenker", "text": "Veenker" }
+    ]
+  },
+  {
+    "title": "Condition1",
+    "helper": "Proximidad a varias condiciones",
+    "options": [
+      { "value": "Artery", "text": "Adyacente a calle arterial" },
+      { "value": "Feedr", "text": "Adyacente a calle secundaria" },
+      { "value": "Norm", "text": "Normal" },
+      { "value": "RRNn", "text": "Dentro de 200' del ferrocarril Norte-Sur" },
+      { "value": "RRAn", "text": "Adyacente al ferrocarril Norte-Sur" },
+      {
+        "value": "PosN",
+        "text": "Cerca de característica positiva externa--parque, cinturón verde, etc."
+      },
+      {
+        "value": "PosA",
+        "text": "Adyacente a característica positiva externa"
+      },
+      { "value": "RRNe", "text": "Dentro de 200' del ferrocarril Este-Oeste" },
+      { "value": "RRAe", "text": "Adyacente al ferrocarril Este-Oeste" }
+    ]
+  },
+  {
+    "title": "Condition2",
+    "helper": "Proximidad a varias condiciones (si hay más de una)",
+    "options": [
+      { "value": "Artery", "text": "Adyacente a calle arterial" },
+      { "value": "Feedr", "text": "Adyacente a calle secundaria" },
+      { "value": "Norm", "text": "Normal" },
+      { "value": "RRNn", "text": "Dentro de 200' del ferrocarril Norte-Sur" },
+      { "value": "RRAn", "text": "Adyacente al ferrocarril Norte-Sur" },
+      {
+        "value": "PosN",
+        "text": "Cerca de característica positiva externa--parque, cinturón verde, etc."
+      },
+      {
+        "value": "PosA",
+        "text": "Adyacente a característica positiva externa"
+      },
+      { "value": "RRNe", "text": "Dentro de 200' del ferrocarril Este-Oeste" },
+      { "value": "RRAe", "text": "Adyacente al ferrocarril Este-Oeste" }
+    ]
+  },
+  {
+    "title": "BldgType",
+    "helper": "Tipo de vivienda",
+    "options": [
+      { "value": "1Fam", "text": "Vivienda unifamiliar" },
+      { "value": "2FmCon", "text": "Conversión de dos familias" },
+      { "value": "Duplx", "text": "Dúplex" },
+      { "value": "TwnhsE", "text": "Adosado en unidad final" },
+      { "value": "TwnhsI", "text": "Adosado en unidad interior" }
+    ]
+  },
+  {
+    "title": "HouseStyle",
+    "helper": "Estilo de vivienda",
+    "options": [
+      { "value": "1Story", "text": "Una planta" },
+      { "value": "1.5Fin", "text": "Una planta y media" },
+      { "value": "1.5Unf", "text": "Una planta y media" },
+      { "value": "2Story", "text": "Dos plantas" },
+      { "value": "2.5Fin", "text": "Dos plantas y media" },
+      { "value": "2.5Unf", "text": "Dos plantas y media" },
+      { "value": "SFoyer", "text": "Entrada dividida" },
+      { "value": "SLvl", "text": "Nivel dividido" }
+    ]
+  },
+  {
+    "title": "OverallQual",
+    "helper": "Califica el material general y el acabado de la casa",
+    "options": [
+      { "value": 10, "text": "Muy Excelente" },
+      { "value": 9, "text": "Excelente" },
+      { "value": 8, "text": "Muy Bueno" },
+      { "value": 7, "text": "Bueno" },
+      { "value": 6, "text": "Por encima del promedio" },
+      { "value": 5, "text": "Promedio" },
+      { "value": 4, "text": "Por debajo del promedio" },
+      { "value": 3, "text": "Justo" },
+      { "value": 2, "text": "Pobre" },
+      { "value": 1, "text": "Muy Pobre" }
+    ]
+  },
+  {
+    "title": "OverallCond",
+    "helper": "Evalúa la condición general de la casa",
+    "options": [
+      { "value": 10, "text": "Muy Excelente" },
+      { "value": 9, "text": "Excelente" },
+      { "value": 8, "text": "Muy Bueno" },
+      { "value": 7, "text": "Bueno" },
+      { "value": 6, "text": "Por encima del promedio" },
+      { "value": 5, "text": "Promedio" },
+      { "value": 4, "text": "Por debajo del promedio" },
+      { "value": 3, "text": "Justo" },
+      { "value": 2, "text": "Pobre" },
+      { "value": 1, "text": "Muy Pobre" }
+    ]
+  },
+  {
+    "title": "YearBuilt",
+    "helper": "Fecha de construcción original"
+  },
+  {
+    "title": "YearRemodAdd",
+    "helper": "Fecha de remodelación (igual a la construcción si no hay remodelación o adición)"
+  },
+  {
+    "title": "RoofStyle",
+    "helper": "Tipo de techo",
+    "options": [
+      { "value": "Flat", "text": "Plano" },
+      { "value": "Gable", "text": "A dos aguas" },
+      { "value": "Gambrel", "text": "Gabrel (Granero)" },
+      { "value": "Hip", "text": "Cuatro aguas" },
+      { "value": "Mansard", "text": "Mansarda" },
+      { "value": "Shed", "text": "Cobertizo" }
+    ]
+  },
+  {
+    "title": "RoofMatl",
+    "helper": "Material del techo",
+    "options": [
+      { "value": "ClyTile", "text": "Arcilla o Teja" },
+      { "value": "CompShg", "text": "Teja estándar (Compuesta)" },
+      { "value": "Membran", "text": "Membrana" },
+      { "value": "Metal", "text": "Metal" },
+      { "value": "Roll", "text": "Rollo" },
+      { "value": "Tar&Grv", "text": "Grava y Alquitrán" },
+      { "value": "WdShake", "text": "Tejas de madera" },
+      { "value": "WdShngl", "text": "Chapas de madera" }
+    ]
+  },
+  {
+    "title": "Exterior1st",
+    "helper": "Revestimiento exterior de la casa",
+    "options": [
+      { "value": "AsbShng", "text": "Tablero de asbesto" },
+      { "value": "AsphShn", "text": "Tejas de asfalto" },
+      { "value": "BrkComm", "text": "Ladrillo común" },
+      { "value": "BrkFace", "text": "Cara de Ladrillo" },
+      { "value": "CBlock", "text": "Bloque de Hormigón" },
+      { "value": "CemntBd", "text": "Tablero de Cemento" },
+      { "value": "HdBoard", "text": "Tablero duro" },
+      { "value": "ImStucc", "text": "Estuco imitación" },
+      { "value": "MetalSd", "text": "Revestimiento Metálico" },
+      { "value": "Other", "text": "Otro" },
+      { "value": "Plywood", "text": "Madera contrachapada" },
+      { "value": "PreCast", "text": "Precast" },
+      { "value": "Stone", "text": "Piedra" },
+      { "value": "Stucco", "text": "Estuco" },
+      { "value": "VinylSd", "text": "Revestimiento de Vinilo" },
+      { "value": "Wd Sdng", "text": "Revestimiento de Madera" },
+      { "value": "WdShing", "text": "Chapas de Madera" }
+    ]
+  },
+  {
+    "title": "Exterior2nd",
+    "helper": "Revestimiento exterior de la casa (si hay más de un material)",
+    "options": [
+      { "value": "AsbShng", "text": "Tablero de asbesto" },
+      { "value": "AsphShn", "text": "Tejas de asfalto" },
+      { "value": "BrkComm", "text": "Ladrillo común" },
+      { "value": "BrkFace", "text": "Cara de Ladrillo" },
+      { "value": "CBlock", "text": "Bloque de Hormigón" },
+      { "value": "CemntBd", "text": "Tablero de Cemento" },
+      { "value": "HdBoard", "text": "Tablero duro" },
+      { "value": "ImStucc", "text": "Estuco imitación" },
+      { "value": "MetalSd", "text": "Revestimiento Metálico" },
+      { "value": "Other", "text": "Otro" },
+      { "value": "Plywood", "text": "Madera contrachapada" },
+      { "value": "PreCast", "text": "Precast" },
+      { "value": "Stone", "text": "Piedra" },
+      { "value": "Stucco", "text": "Estuco" },
+      { "value": "VinylSd", "text": "Revestimiento de Vinilo" },
+      { "value": "Wd Sdng", "text": "Revestimiento de Madera" },
+      { "value": "WdShing", "text": "Chapas de Madera" }
+    ]
+  },
+  {
+    "title": "MasVnrType",
+    "helper": "Tipo de revestimiento de mampostería",
+    "options": [
+      { "value": "BrkCmn", "text": "Ladrillo Común" },
+      { "value": "BrkFace", "text": "Cara de Ladrillo" },
+      { "value": "CBlock", "text": "Bloque de Hormigón" },
+      { "value": "None", "text": "Ninguno" },
+      { "value": "Stone", "text": "Piedra" }
+    ]
+  },
+  {
+    "title": "MasVnrArea",
+    "helper": "Área de revestimiento de mampostería en pies cuadrados"
+  },
+  {
+    "title": "ExterQual",
+    "helper": "Evalúa la calidad del material en el exterior",
+    "options": [
+      { "value": "Ex", "text": "Excelente" },
+      { "value": "Gd", "text": "Bueno" },
+      { "value": "TA", "text": "Promedio/Tipico" },
+      { "value": "Fa", "text": "Justo" },
+      { "value": "Po", "text": "Pobre" }
+    ]
+  },
+  {
+    "title": "ExterCond",
+    "helper": "Evalúa la condición actual del material en el exterior",
+    "options": [
+      { "value": "Ex", "text": "Excelente" },
+      { "value": "Gd", "text": "Bueno" },
+      { "value": "TA", "text": "Promedio/Tipico" },
+      { "value": "Fa", "text": "Justo" },
+      { "value": "Po", "text": "Pobre" }
+    ]
+  },
+  {
+    "title": "Foundation",
+    "helper": "Tipo de cimiento",
+    "options": [
+      { "value": "BrkTil", "text": "Ladrillo y teja" },
+      { "value": "CBlock", "text": "Bloque de Hormigón" },
+      { "value": "PConc", "text": "Hormigón vertido" },
+      { "value": "Slab", "text": "Losa" },
+      { "value": "Stone", "text": "Piedra" },
+      { "value": "Wood", "text": "Madera" }
+    ]
+  },
+  {
+    "title": "BsmtQual",
+    "helper": "Evalúa la altura del sótano",
+    "options": [
+      { "value": "Ex", "text": "Excelente (100+ pulgadas)" },
+      { "value": "Gd", "text": "Bueno (90-99 pulgadas)" },
+      { "value": "TA", "text": "Tipico (80-89 pulgadas)" },
+      { "value": "Fa", "text": "Justo (70-79 pulgadas)" },
+      { "value": "Po", "text": "Pobre (<70 pulgadas" },
+      { "value": "NA", "text": "Sin sótano" }
+    ]
+  },
+  {
+    "title": "BsmtCond",
+    "helper": "Evalúa el estado general del sótano",
+    "options": [
+      { "value": "Ex", "text": "Excelente" },
+      { "value": "Gd", "text": "Bueno" },
+      { "value": "TA", "text": "Típico (se permite ligera humedad)" },
+      {
+        "value": "Fa",
+        "text": "Justo (humedad o algunas grietas o asentamientos)"
+      },
+      {
+        "value": "Po",
+        "text": "Pobre (Grietas severas, asentamientos o humedad)"
+      },
+      { "value": "NA", "text": "Sin sótano" }
+    ]
+  },
+  {
+    "title": "BsmtExposure",
+    "helper": "Se refiere a paredes a nivel de jardín o salida",
+    "options": [
+      { "value": "Gd", "text": "Bueno" },
+      { "value": "Av", "text": "Promedio" },
+      { "value": "Mn", "text": "Malo" },
+      { "value": "No", "text": "Sin exposición o salida" },
+      { "value": "NA", "text": "Sin sótano" }
+    ]
+  },
+  {
+    "title": "BsmtFinType1",
+    "helper": "Calificación del área terminada del sótano",
+    "options": [
+      { "value": "GLQ", "text": "Buenas Habitaciones" },
+      { "value": "ALQ", "text": "Habitaciones Promedio" },
+      { "value": "BLQ", "text": "Habitaciones Por Debajo del Promedio" },
+      { "value": "Rec", "text": "Habitación Recreativa Promedio" },
+      { "value": "LwQ", "text": "Baja Calidad" },
+      { "value": "Unf", "text": "Sin terminar" },
+      { "value": "NA", "text": "Sin sótano" }
+    ]
+  },
+  {
+    "title": "BsmtFinSF1",
+    "helper": "Pies cuadrados terminados del área tipo 1"
+  },
+  {
+    "title": "BsmtFinType2",
+    "helper": "Calificación del área terminada del sótano (si hay varios tipos)",
+    "options": [
+      { "value": "GLQ", "text": "Buenas Habitaciones" },
+      { "value": "ALQ", "text": "Habitaciones Promedio" },
+      { "value": "BLQ", "text": "Habitaciones Por Debajo del Promedio" },
+      { "value": "Rec", "text": "Habitación Recreativa Promedio" },
+      { "value": "LwQ", "text": "Baja Calidad" },
+      { "value": "Unf", "text": "Sin terminar" },
+      { "value": "NA", "text": "Sin sótano" }
+    ]
+  },
+  {
+    "title": "BsmtFinSF2",
+    "helper": "Pies cuadrados terminados del área tipo 2"
+  },
+  {
+    "title": "BsmtUnfSF",
+    "helper": "Pies cuadrados sin terminar del área del sótano"
+  },
+  {
+    "title": "TotalBsmtSF",
+    "helper": "Pies cuadrados totales del área del sótano"
+  },
+  {
+    "title": "Heating",
+    "helper": "Tipo de calefacción",
+    "options": [
+      { "value": "Floor", "text": "Calefacción por suelo" },
+      { "value": "GasA", "text": "Calefacción forzada a gas" },
+      { "value": "GasW", "text": "Calefacción de agua caliente o vapor a gas" },
+      { "value": "Grav", "text": "Calefacción por gravedad" },
+      {
+        "value": "OthW",
+        "text": "Calefacción de agua caliente o vapor que no sea gas"
+      },
+      { "value": "Wall", "text": "Calefacción de pared" }
+    ]
+  },
+  {
+    "title": "HeatingQC",
+    "helper": "Calidad y condición de la calefacción",
+    "options": [
+      { "value": "Ex", "text": "Excelente" },
+      { "value": "Gd", "text": "Bueno" },
+      { "value": "TA", "text": "Promedio/Tipico" },
+      { "value": "Fa", "text": "Justo" },
+      { "value": "Po", "text": "Pobre" }
+    ]
+  },
+  {
+    "title": "CentralAir",
+    "helper": "Aire acondicionado central",
+    "options": [
+      { "value": "N", "text": "No" },
+      { "value": "Y", "text": "Si" }
+    ]
+  },
+  {
+    "title": "Electrical",
+    "helper": "Sistema eléctrico",
+    "options": [
+      { "value": "SBrkr", "text": "Estándar (SBrkr)" },
+      {
+        "value": "FuseA",
+        "text": "Caja de fusibles de más de 60 AMP y todo el cableado Romex (Promedio)"
+      },
+      {
+        "value": "FuseF",
+        "text": "Caja de fusibles de 60 AMP y principalmente cableado Romex (Justo)"
+      },
+      {
+        "value": "FuseP",
+        "text": "Caja de fusibles de 60 AMP y principalmente cableado de perilla y tubo (pobre)"
+      },
+      { "value": "Mix", "text": "Mezclado" }
+    ]
+  },
+  {
+    "title": "1stFlrSF",
+    "helper": "Pies cuadrados del primer piso"
+  },
+  {
+    "title": "2ndFlrSF",
+    "helper": "Pies cuadrados del segundo piso"
+  },
+  {
+    "title": "LowQualFinSF",
+    "helper": "Pies cuadrados de acabado de baja calidad (todas las plantas)"
+  },
+  {
+    "title": "GrLivArea",
+    "helper": "Pies cuadrados de área habitable por encima del nivel del suelo"
+  },
+  {
+    "title": "BsmtFullBath",
+    "helper": "Baños completos en el sótano"
+  },
+  {
+    "title": "BsmtHalfBath",
+    "helper": "Medios baños en el sótano"
+  },
+  {
+    "title": "FullBath",
+    "helper": "Baños completos por encima del nivel del suelo"
+  },
+  {
+    "title": "HalfBath",
+    "helper": "Medios baños por encima del nivel del suelo"
+  },
+  {
+    "title": "Bedroom",
+    "helper": "Dormitorios por encima del nivel del suelo (NO incluye dormitorios en el sótano)"
+  },
+  {
+    "title": "Kitchen",
+    "helper": "Cocinas por encima del nivel del suelo"
+  },
+  {
+    "title": "KitchenQual",
+    "helper": "Calidad de la cocina",
+    "options": [
+      { "value": "Ex", "text": "Excelente" },
+      { "value": "Gd", "text": "Bueno" },
+      { "value": "TA", "text": "Promedio/Tipico" },
+      { "value": "Fa", "text": "Justo" },
+      { "value": "Po", "text": "Pobre" }
+    ]
+  },
+  {
+    "title": "TotRmsAbvGrd",
+    "helper": "Total de habitaciones por encima del nivel del suelo (no incluye baños)"
+  },
+  {
+    "title": "Functional",
+    "helper": "Calificación de la funcionalidad de la casa",
+    "options": [
+      { "value": "Typ", "text": "Funcionalidad Típica" },
+      { "value": "Min1", "text": "Deducciones Menores 1" },
+      { "value": "Min2", "text": "Deducciones Menores 2" },
+      { "value": "Mod", "text": "Deducciones Moderadas" },
+      { "value": "Maj1", "text": "Deducciones Mayores 1" },
+      { "value": "Maj2", "text": "Deducciones Mayores 2" },
+      { "value": "Sev", "text": "Severamente Dañado" },
+      { "value": "Sal", "text": "Solo para desguace" }
+    ]
+  },
+  {
+    "title": "Fireplaces",
+    "helper": "Número de chimeneas"
+  },
+  {
+    "title": "FireplaceQu",
+    "helper": "Calidad de la chimenea",
+    "options": [
+      {
+        "value": "Ex",
+        "text": "Excelente - Chimenea de mampostería excepcional"
+      },
+      {
+        "value": "Gd",
+        "text": "Bueno - Chimenea de mampostería en el nivel principal"
+      },
+      {
+        "value": "TA",
+        "text": "Promedio - Chimenea prefabricada en el área principal de vida o Chimenea de mampostería en el sótano"
+      },
+      { "value": "Fa", "text": "Justo - Chimenea prefabricada en el sótano" },
+      { "value": "Po", "text": "Pobre - Estufa Ben Franklin" },
+      { "value": "NA", "text": "Sin chimenea" }
+    ]
+  },
+  {
+    "title": "GarageType",
+    "helper": "Ubicación del garaje",
+    "options": [
+      { "value": "2Types", "text": "Más de un tipo de garaje" },
+      { "value": "Attchd", "text": "Adosado a la casa" },
+      { "value": "Basment", "text": "Garaje en sótano" },
+      {
+        "value": "BuiltIn",
+        "text": "Integrado (Parte de la casa - típicamente tiene habitación encima del garaje)"
+      },
+      { "value": "CarPort", "text": "Cochera" },
+      { "value": "Detchd", "text": "Separado de la casa" },
+      { "value": "NA", "text": "Sin garaje" }
+    ]
+  },
+  {
+    "title": "GarageYrBlt",
+    "helper": "Año de construcción del garaje"
+  },
+  {
+    "title": "GarageFinish",
+    "helper": "Acabado interior del garaje",
+    "options": [
+      { "value": "Fin", "text": "Terminado" },
+      { "value": "RFn", "text": "Acabado rudo" },
+      { "value": "Unf", "text": "Sin terminar" },
+      { "value": "NA", "text": "Sin garaje" }
+    ]
+  },
+  {
+    "title": "GarageCars",
+    "helper": "Tamaño del garaje en capacidad de automóviles"
+  },
+  {
+    "title": "GarageArea",
+    "helper": "Tamaño del garaje en pies cuadrados"
+  },
+  {
+    "title": "GarageQual",
+    "helper": "Calidad del garaje",
+    "options": [
+      { "value": "Ex", "text": "Excelente" },
+      { "value": "Gd", "text": "Bueno" },
+      { "value": "TA", "text": "Promedio/Tipico" },
+      { "value": "Fa", "text": "Justo" },
+      { "value": "Po", "text": "Pobre" },
+      { "value": "NA", "text": "Sin garaje" }
+    ]
+  },
+  {
+    "title": "GarageCond",
+    "helper": "Condición del garaje",
+    "options": [
+      { "value": "Ex", "text": "Excelente" },
+      { "value": "Gd", "text": "Bueno" },
+      { "value": "TA", "text": "Promedio/Tipico" },
+      { "value": "Fa", "text": "Justo" },
+      { "value": "Po", "text": "Pobre" },
+      { "value": "NA", "text": "Sin garaje" }
+    ]
+  },
+  {
+    "title": "PavedDrive",
+    "helper": "Calzada pavimentada",
+    "options": [
+      { "value": "Y", "text": "Pavimentado" },
+      { "value": "P", "text": "Pavimento parcial" },
+      { "value": "N", "text": "Tierra/Grava" }
+    ]
+  },
+  {
+    "title": "WoodDeckSF",
+    "helper": "Área de la terraza de madera en pies cuadrados"
+  },
+  {
+    "title": "OpenPorchSF",
+    "helper": "Área del porche abierto en pies cuadrados"
+  },
+  {
+    "title": "EnclosedPorch",
+    "helper": "Área del porche cerrado en pies cuadrados"
+  },
+  {
+    "title": "3SsnPorch",
+    "helper": "Área del porche de tres estaciones en pies cuadrados"
+  },
+  {
+    "title": "ScreenPorch",
+    "helper": "Área del porche con mosquitero en pies cuadrados"
+  },
+  {
+    "title": "PoolArea",
+    "helper": "Área de la piscina en pies cuadrados"
+  },
+  {
+    "title": "PoolQC",
+    "helper": "Calidad de la piscina",
+    "options": [
+      { "value": "Ex", "text": "Excelente" },
+      { "value": "Gd", "text": "Bueno" },
+      { "value": "TA", "text": "Promedio/Tipico" },
+      { "value": "Fa", "text": "Justo" },
+      { "value": "NA", "text": "Sin piscina" }
+    ]
+  },
+  {
+    "title": "Fence",
+    "helper": "Calidad de la cerca",
+    "options": [
+      { "value": "GdPrv", "text": "Cerca de privacidad de buena calidad" },
+      { "value": "MnPrv", "text": "Cerca de privacidad mínima" },
+      { "value": "GdWo", "text": "Cerca de madera de buena calidad" },
+      { "value": "MnWw", "text": "Cerca de madera mínima" },
+      { "value": "NA", "text": "Sin cerca" }
+    ]
+  },
+  {
+    "title": "MiscFeature",
+    "helper": "Características misceláneas no cubiertas en otras categorías",
+    "options": [
+      { "value": "Elev", "text": "Ascensor" },
+      {
+        "value": "Gar2",
+        "text": "Segundo garaje (si no hay en la descripción del garaje)"
+      },
+      { "value": "Othr", "text": "Otro" },
+      { "value": "Shed", "text": "Cobertizo (más de 100 pies cuadrados)" },
+      { "value": "TenC", "text": "Cancha de tenis" },
+      { "value": "NA", "text": "Ninguna" }
+    ]
+  },
+  {
+    "title": "MiscVal",
+    "helper": "Valor en dólares de la característica miscelánea"
+  },
+  {
+    "title": "MoSold",
+    "helper": "Mes de venta"
+  },
+  {
+    "title": "YrSold",
+    "helper": "Año de venta"
+  },
+  {
+    "title": "SaleType",
+    "helper": "Tipo de venta",
+    "options": [
+      { "value": "WD", "text": "Venta de garantía de escritura convencional" },
+      { "value": "CWD", "text": "Venta de garantía de escritura en efectivo" },
+      { "value": "VWD", "text": "Venta de garantía de escritura VA" },
+      {
+        "value": "New",
+        "text": "Venta de vivienda nueva - Construcción incompleta/terminada"
+      },
+      { "value": "COD", "text": "Venta de contrato de corte" },
+      {
+        "value": "Con",
+        "text": "Contrato de 15% de interés regular - Depósito en efectivo o intercambio"
+      },
+      {
+        "value": "ConLw",
+        "text": "Contrato de interés bajo - Depósito en efectivo o intercambio"
+      },
+      {
+        "value": "ConLI",
+        "text": "Contrato de interés bajo - Depósito en efectivo o intercambio"
+      },
+      {
+        "value": "ConLD",
+        "text": "Contrato de depósito grande - Depósito en efectivo o intercambio"
+      },
+      { "value": "Oth", "text": "Otro" }
+    ]
+  },
+  {
+    "title": "SaleCondition",
+    "helper": "Condición de venta",
+    "options": [
+      { "value": "Normal", "text": "Venta normal" },
+      {
+        "value": "Abnorml",
+        "text": "Venta anormal - Comercio, ejecución hipotecaria, ejecución de la hipoteca"
+      },
+      { "value": "AdjLand", "text": "Adjudicación de tierras" },
+      {
+        "value": "Alloca",
+        "text": "Asignación - Dos o más parcelas con diferentes propietarios"
+      },
+      { "value": "Family", "text": "Venta entre miembros de la familia" },
+      {
+        "value": "Partial",
+        "text": "Vivienda nueva - Vendida pero no terminada"
+      }
+    ]
+  }
+]

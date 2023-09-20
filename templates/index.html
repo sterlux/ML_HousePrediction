@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prediccion Inmobiliario</title>
+    <!-- Materialize CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+  </head>
+
+  <body>
+    <header class="center-align">
+      <h2>Predicción Inmobiliaria</h2>
+    </header>
+
+    <div class="container">
+      <form action="/" method="POST">
+        <div class="row">
+          <!-- Input fields -->
+          
+          <div id="variables"></div>
+          
+        <button
+          class="btn waves-effect waves-light"
+          type="submit"
+          name="action"
+        >
+          Predict
+        </button>
+
+        <!-- For Result -->
+        <div class="row center-align">
+          {% if results %}
+          <h3>Price Is ${{results}}</h3>
+          {% else %} {% endif %}
+        </div>
+
+        <!-- Author Details -->
+        <div class="section">
+          <h5>Equipo #2</h5>
+          <div class="row">
+            <div class="col s3">
+              <p>
+                Selene Solís <br />(<a href="mailto:selene.solis@cetys.edu.mx"
+                  >selene.solis@cetys.edu.mx</a
+                >)
+              </p>
+            </div>
+            <div class="col s3">
+              <p>
+                Alejandro Rodríguez <br />(<a
+                  href="mailto:jorgealejandro.rodriguez@cetys.edu.mx"
+                  >jorgealejandro.rodriguez@cetys.edu.mx</a
+                >)
+              </p>
+            </div>
+            <div class="col s3">
+              <p>
+                Luis Franco <br />(<a href="mailto:luis.franco@cetys.edu.mx"
+                  >luis.franco@cetys.edu.mx</a
+                >)
+              </p>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+    <script src="../static/script.js"></script>
+    <!-- Materialize JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+      // Initialize Materialize components
+      document.addEventListener("DOMContentLoaded", function () {
+        var elems = document.querySelectorAll("select");
+        var instances = M.FormSelect.init(elems);
+      });
+    </script>
+  </body>
+</html>
