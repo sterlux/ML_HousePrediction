@@ -31,7 +31,9 @@
 
 After following these steps, you should have your environment set up and ready.
 
-This project was created for academic purposes.
+
+This project was created for academic purposes by:
+
 Selene Solís
 (selene.solis@cetys.edu.mx)
 
